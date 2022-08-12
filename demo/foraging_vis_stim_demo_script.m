@@ -122,7 +122,7 @@ for i = 1:nrStim
             stimRect(i,:) = [0 0 stimulus(i).Vstim_size(1) stimulus(i).Vstim_size(2)];
         end
         
-        % set the nr of screen flips for each stimulus, according for monitor
+        % set the nr of screen flips for each stimulus, according to monitor
         % inter-frame interval
         stimulus(i).Vstim_flips = round(stimulus(i).Vstim_dur/ifi); % number of screen flips to be on
     else % auditory only
