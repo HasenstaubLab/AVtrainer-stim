@@ -146,10 +146,9 @@ WaitSecs(0.5);
 
 %%% setup complete, begin stimulus presentation
 disp('Starting session');
-while 1
-    %%% determine what track dots to draw
-    disp(currStim)
-    
+
+while 1 % forever loop, broken by ESC key or completing all trs
+    % determine what track dots to draw
     if currStim ~= 0 % in stimulus
         
         percentOnScreen = round(yOffset/maxYOffset*100); % amt of stim on screen
